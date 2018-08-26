@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title> Gale Web Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script "text/javascript">
+	function search()
+	{
+		alert("Uh oh!!! I'm the only Product available in this Website.");
+	}
+	function listchange()
+	{
+		var x = document.getElementById("listID").selectedIndex;
+		if ((x==1) || (x==2) || (x==3))
+		{
+			document.getElementById("lblprice").innerHTML=" <b>$$$</b> Negotiable";
+			document.getElementById("cartBtn").disabled = false;
+			document.getElementById("buyBtn").disabled = false;
+		}
+		else
+		{
+		 document.getElementById("lblprice").innerHTML="Not Available for this type";
+		 document.getElementById("cartBtn").disabled = true;
+		 document.getElementById("buyBtn").disabled = true;
+		}
+	}
+	function buynow()
+	{
+		window.location.href = 'mailto:address@dmail.com?subject=Hello there&body=This is the body'
+	}
+	function closeMe()
+	{
+		document.body.innerHTML = '<b>Thanks for considering my profile!!!</b>';
+	}
+	function openInNewTab(url)
+	{
+		var win = window.open(url, '_blank');
+		win.focus();
+	}
+	//Navigation bar pop over script
+	$(document).ready(function(){
+  	  $('[data-toggle="popover"]').popover();   
+	});
+
+
+  </script>
+  <style>
+	  .border {
+		display: inline-block;
+		margin: 6px;
+		  }
+	  .centertext { text-align:center;}
+	  .righttext { text-align:right;}
+	  .color { color:red}
+	  .blinking{
+		animation:blinkingText 1s infinite;
+		}
+		@keyframes blinkingText{
+			0%{     color: #000;    }
+			49%{    color: #000; }
+			50%{    color: transparent; }
+			99%{    color: transparent;  }
+			100%{   color: #000;    }
+		}
+  </style>
+</head>
+<body>
+
+<!--------------------------------Nav tabs---------------------- -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+		<ul class="navbar-nav nav">
+			<li class="nav-item">
+				<a class="navbar-brand" data-toggle="tab" href="#home">My Skills></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="As a technical developer for UHG, worked on the all project modules and extensions development and have experience on various project modules, Memberships, Claims, Billing, Accumulators.
+					 Involved in peer code reviews to ensure development practices that adhere to the coding rules. Java and Unix are the main Technologies used.">EEMS</a>
+					 
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Designed the end to end flow of the interface and prepares detailed technical design specifications document.
+					Tracked the status of all the Requirements and Queries related to our project to ensure that the deadlines are met.Mostly on Ruby on Rails.">Tracker Tool</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Developed a online quiz system using javascript,HTML,CSS,Bootstrap,PHP for Academic Project.Take a look on github link below.">Online Quiz</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Developed a Online restauarant System using c#,ASP.NET, ADO.NET, LINQ with SQL server DBMS. Take a look on github link below.">Online Restuarant</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="As part of CDB Error Correction project, the overlay errors in the member data are corrected in Production database. 
+					Overlay error happens when CDB application in UHG is not able to determine if multiple similar membership records belong to same or different members due to data overlays.">CDB Error Correction</a>
+					
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Languages</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Have a Hands on Experience with these concepts.">C</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="3 Years of Professional and Academic Experience on Object Oriented Concepts.">C++</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="3 Years of Professional and Academic Experience on Java,J2EE,Spring MVC,Servlets,JMS,JDBC">Java</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Have a Hands on Experience on basic and Advanced Concepts of C#.Project on Github.">C#</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Have a Hands on Experience on PHP Concepts. Project on Github.">PHP</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Have a basic understanding of python Concepts.Willing to Learn more if position demands.">Python</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="Have more than 3 years of Professional and Academic Experience on Advanced Concepts of SQL.">SQL</a>
+					
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Web Technologies</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Have more than 3 years of Professional and Academic Experience on HTML.Project on Github.">HTML5</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Have more than 3 years of Professional and Academic Experience on CSS.Project on Github.">CSS3</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Have more than 3 years of Professional and Academic Experience on Bootstarp.Project on Github.">Bootstrap4</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover" 
+					data-content="Have more than 3 years of Professional and Academic Experience on Javascript.Project on Github.">JavaScript</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Have a Hands on Experience on Angular Concepts.">Angular</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Have a Hands on Experience on React Concepts.Project coming soon on Github.">React</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Have a basic understanding of Node Concepts.Willing to Learn more if position demands.">Node</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="Have a Hands on Experience on JQuery. Project on Github.">JQuery</a>
+					
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Frameworks</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" title="Java Frameworks" 
+					data-content="Have more than 3 years of Professional and Academic Experience on Spring MVC,Struts,JBoss etc.">Java</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover" title=".NET Frameworks" 
+					data-content="Have an Academic Experience on ADO.NET, LINQ,ASP.NET, Windows Applicaition,Console Applications, Web Applications.Project on Github.">c#</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" title="DJango"
+					data-content="Have a hands on Experience on Django.Willing to Learn more if position demands.">Python</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="TestNG"
+					data-content="Worked on a one month project for Automation Testing using TestNG selenium web drivers.">Selenium</a>
+					
+					</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Worked for more than 3 years Professionally on many Projects using Eclipse.">Eclipse</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Worked on many Projects using Netbeans.">Netbeans</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Developed many Projects using Visual Studio.Projects are also on Github.">Visual Studio</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Have a Good Understanding on IntelliJ.">IntelliJ</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Good Knowledge and extensively used putty for almost all the projects in Cognizant.">Putty</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Trained and Developed a Web project using PEGA PRPC tool.Willing to learn more if position demands.">PEGA PRPC</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover"
+					data-content="Worked on a one month project for Automation Testing using TestNG selenium web drivers.">Selinium Web Driver</a>
+					
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Mainframes</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Trained 6 months on IBM Mainframes system at Cognizant Technology Systems.Have Good Understanding of Mainframes.
+					Worked on small projects.">JCL</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover" 
+					data-content="Trained 6 months on IBM Mainframes system at Cognizant Technology Systems.Have Good Understanding of Mainframes.
+					Worked on small projects.">COBOL</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="Trained 6 months on IBM Mainframes system at Cognizant Technology Systems.Have Good Understanding of Mainframes.
+					Worked on small projects.">DB2</a>
+					
+					</div>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="Completed an Academic course on Big Data Solutions.Expertised the concepts of Big Data Architecture,Hadoop HDFS,Json, Avro
+					.Worked on NoSQL/MongoDB database systems. Well mannered with Mapreduce Programs.Learned the use of Pig,HIVE.If gievn a chance willing to learn lot
+					and stand good for the company's position.">BigData</a>
+			</li>	
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Others</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Trained and Developed a Web project using PEGA PRPC tool.Willing to learn more if position demands">PEGA</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover" 
+					data-content="Good command on Windowas,linux and macintosh systems.">OS</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="2 years of Professional Experience and have Knowledge of Unix commands.">UNIX</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Full Knowledge on usage of RESTful services like SOAP etc.">REST API</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Full Experience in using git,SVN and knowledge on npm version controlling systems.">Version Controls</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="More used on XML parsing techniques like SAX,DOM.Have good understanding on XML FIles.">XML</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover"
+					data-content="Complete demonstrated knowledge on AJAX.">AJAX</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Completed a course on Project Management.Complete understanding of Organization Strucutre,culture.Network Diagrams,
+					Cost Estimation,SDLC phases.Managing risks,Estimating Projects,Resource Levelling,Cost Estimation.Resource Scheduling.Usage of CMM Model">Project Management</a>
+					
+					<a href="#" class="dropdown-item" data-placement="left" data-toggle="popover" data-trigger="hover" 
+					data-content="Took a course on Software Engineering which covers the systematic approach to the specification, development, operation, maintenance,
+					and retirement of software.  Topics include formal specification tools, developmental strategies and quality assurance.">Software Engineering</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Well versed with complete Software Development Life Cycle (SDLC) process with expertise in Planning, Reviewing, Documentation, Design, Development, 
+					Testing, Implementation and Maintenance of applications.">SDLC</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover"
+					data-content="Attention to detail, Communication skills including oral, written, and/or nonverbal.Human Relations/Interpersonal skills, Maintain confidentiality.
+					Leadership Skills,Motivation Skills.Supervisory skills including motivation, delegation of duties, evaluation, etc, Management and/or administration skills like Ability to manage multiple concurrent projects and meet deadlines">Extra Skills</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Activities</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Stood second in Concotion for Eye Robot Projects and participated in Youth Vibes, Lovely Professional University">Youth Vibes</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Member of NSS, Lovely Professional University.Volunteered in many Activities and recognized for my participation.">NSS</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Won Consolation Prize for showcasing culture of DR.Congo in Cultural Festival,One World,Lovely Professional University.">One World</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Acted as Point of Contact and organized many Outreach Activities,Lead Outreach-UHG, Cognizant Technology Solutions.">Outreach</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover" 
+					data-content="Active Member of International Cultural Organization,University Of Central Missouri.Learning about Multi cultural Values.">ISO</a>
+					
+					<a href="#" class="dropdown-item" data-placement="right" data-toggle="popover" data-trigger="hover"
+					data-content="Active Member of Internationl English Speaking Programme ,University Of Central Missouri.">English Conversation Program</a>
+					
+					<a href="#" class="dropdown-item" data-placement="bottom" data-toggle="popover" data-trigger="hover" 
+					data-content="Working currently as a Graduate Assistant under my professor of CIS Department.Assisting students on Advanced concepts of Databases.">Graduate Research Assistant</a>
+				</div>
+			</li>
+				<form class="form-inline" action="#">
+					<input class="form-control mr-sm-1" type="text" placeholder="Search other products ">
+					<button class="btn btn-success " onclick="search()" type="button">Search <img src="search.png"></button></input>
+				</form>
+		</ul>
+	</nav>
+
+<!--------------------------------   Nav ends   ------------------------>
+	<div class="container">
+		<div> <pre> 
+		</pre> </div>
+		</br><span class="centertext blinking"> <h4>Hello. Welcome to My Web Resume. This Product is New !!!</h4></span> </br>
+		<div class="table table-borderless">
+			<div class="row">
+				<div class="col-4"> 
+					</br>
+					<span class="border"><img src="download.jpg" class=" img-fluid rounded float-left"></span>	
+				</div>
+				<div class="col-8">
+					<div class="border border-0" style="background-color:light;">			
+						<h3>3 Year IT Professional <span class="badge badge-secondary">New</span></h3>
+						<img src="star.png"><img src="star.png"><img src="star.png"><img src="star.png"><img src="star.png"></br></br>
+						Please select the Quantity 
+						<select disabled>
+						  <option value="1">1</option>
+						</select> 
+						</br><span class="color">Due to Peak Demand on the Product, This product is limited to one per customer.</span></br>
+						Select the Product Type: 
+						<select id="listID" onchange="listchange()">
+						  <option >Select</option>
+						  <option >Full Time</option>
+						  <option >Part Time</option>
+						  <option >Internship</option>
+						  <option >Contract</option>
+						</select></br>
+						<b>Price: </b> <p id="lblprice"> Select the prodcut type to see the price </p>
+						Free Shipping anywhere in US.
+						Arrives after December 2018.</br>
+						<button type="button" id="cartBtn" class="btn btn-success" data-toggle="modal" data-target="#AddCart" >Add to Cart</button>
+						<button type="button" id="buyBtn" class="btn btn-success" data-toggle="modal" data-target="#BuyNow">Buy Now<img src="gmail.png"></button></br></br>
+						<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Nointrest">Not Intrested</button></br></br></br>
+						
+						<img src="item.png"> Product sold by <a href="https://www.galedeals.com" target="_blank">GaleDeals </a></br></br>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<h4>Customers also Viewed </h4>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<a href="https://www.github.com/gale100" target="_blank"><img src="github.jpg" width="220" height="220"></a></br>
+					<b>Price: </b> Negotiable</br>
+					Click on this Product for my Official Github Page.
+				</div>
+				<div class="col-4">
+					<a href="https://www.linkedin.com/in/avinashgale" target="_blank"><img src="linkedin.png" width="220" height="220"></a></br>
+					<b>Price: </b> Negotiable</br>
+					Find my profile on Linkedin.
+				</div>
+				<div class="col-4">					
+					<a href="https://www.dice.com/dashboard/profiles/79f2b4d482c9aefa7c7f3843ec5066cc" target="_blank"><img src="dice.png" width="220" height="220"></a></br>
+					<b>Price: </b> Negotiable</br>
+					Ah!! Im also on Dice.com
+				</div>
+			</div></br>
+			<div class="row">
+				<h4>About This Product: </h4>
+				<table class="table table-striped">
+				  <thead>
+					<tr class="table-active">
+					  <th scope="col" class="centertext">Features</th>
+					  <th scope="col" class="centertext">Description</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">Name:</th>
+					  <td>Avinash Gale Narla.</td>
+					</tr>
+					<tr>
+					  <th scope="row">Sex:</th>
+					  <td>Male</td>
+					</tr>
+					<tr>
+					  <th scope="row">Experience:</th>
+					  <td>2 years as a Programmer Analyst with Cognizant Technology Solutions. Java and Unix are Primary Technologies.</br>
+					  More than 2 years of Web developement Experience as Front End and Backend Developer.
+					  </td>
+					</tr>
+					<tr>
+					  <th scope="row">Education:</th>
+					  <td>Masters in Computer Information Systems with 4 GPA.</br>Bachelors in Electronics and Communicaiton Engineering with 3.4 GPA.</td>
+					</tr>
+					<tr>
+					  <th scope="row">Address:</th>
+					  <td>Coach House,Kansas city,Kansas.</td>
+					</tr>
+					<tr>
+					  <th scope="row">Work Authorization:</th>
+					  <td>Can work on Internship from January 2019 and Full time from May 2019.</td>
+					</tr>
+					<tr>
+					  <th scope="row">Relocation:</th>
+					  <td>Open to relocation if the position demands and matches to my skills.</td>
+					</tr>
+					<tr>
+					  <th scope="row">More:</th>
+					  <td> Still Need more information?? Below are the available modes to communicate. Always open to questions.</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+			<pre>
+			
+			
+			
+			</pre>
+			<div class="row">
+				<h5>Contact me:</h5></br>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<img src="phone.png"></img> +16604419379
+				</div>
+				<div class="col-3">
+					<img src="gmail.png"></img> avinashgale@gmail.com
+				</div>
+				<div class="col-7">
+					<div class="float-right">
+						<b>My Free time Stuff: </b></br>
+						</br><a href="https://www.galedeals.com" target="_blank" ><img src="galedeals.png" width="100" height="100"></a> </br>
+					</div>	
+				</div>			
+			
+			</div>
+			<div class="row ">
+				<div class="col-12">
+					<center>Website designed using HTML,CSS,Bootstrap,JavaScript,JQuery. ©Gale,2018.</center>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<!-- Not intrested modal -->
+	<div class="modal fade" id="Nointrest">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Are you Sure?</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<pre>You miss 100% of the shots you don't take - Wayne Gretzky</pre>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="closeMe()"/>Yes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Buy Now  modal -->
+	<div class="modal fade" id="BuyNow">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Select Payment Type</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button onclick="openInNewTab('https://mail.google.com/mail/u/0/?view=cm&to=avinashgale@gmail.com&su=Regarding+Web+Resume&body=Hello+Gale,%0AI%27m+Interested+in+your+skills.Can+we+set+up+a+meeting?&fs=1&tf');">Pay Through Gmail</button>
+					</br><button onclick="openInNewTab('mailto:avinasgale@gmail.com?subject=Regarding Web Resume&body=Hello Gale,I'm Interested in your skills.Can we set up a meeting?')">Pay Through Saved Cards(Default Mail)</button>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal"/>Review Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Add Cart modal -->
+	<div class="modal fade" id="AddCart">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Great. Product added to the cart.</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p> Your shopping Cart is Full. Click Buy Now button below to complete your purchase.</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal"/>Review Cart</button>
+					<button type="button" id="buyBtn" class="btn btn-success" data-toggle="modal" data-target="#BuyNow" data-dismiss="modal" >Buy Now<img src="gmail.png"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
